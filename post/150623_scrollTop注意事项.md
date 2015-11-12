@@ -1,6 +1,6 @@
 # scrollTop 注意事项
 
-对于网页的scrollTop，如下代码在chrome正常，但是ie和ff会异常
+对于网页的 `scrollTop`，如下代码在 chrome 正常，但是 ie 和 ff 会异常
 
 ```javascript 
 
@@ -20,9 +20,9 @@
 
 ```
 
-body.scrollTop和documentElement.scrollTop兼容性如下
+`body.scrollTop` 和 `documentElement.scrollTop` 兼容性如下
 
-document.compatMode == BackCompat
+标准模式（`document.compatMode == BackCompat`）：
 
 | | body.scrollTop | documentElement.scrollTop  |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ document.compatMode == BackCompat
 | chrome | 正常 | 0 |
 | ff | 正常 | 0 |
 
-document.compatMode == CSS1Compat
+混杂模式（`document.compatMode == CSS1Compat`）：
 
 | | body.scrollTop | documentElement.scrollTop  |
 | --- | --- | --- |
