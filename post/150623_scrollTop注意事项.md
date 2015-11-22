@@ -2,8 +2,7 @@
 
 对于网页的 `scrollTop`，如下代码在 chrome 正常，但是 ie 和 ff 会异常
 
-```javascript 
-
+```js 
     document.body.scrollTop
     $('body').scrollTop()
 
@@ -11,8 +10,7 @@
 
 所以如果使用的话，使用：
 
-```javascript
-
+```js
     document.body.scrollTop || document.documentElement.scrollTop
     $(window).scrollTop()
     $(document).scrollTop()
