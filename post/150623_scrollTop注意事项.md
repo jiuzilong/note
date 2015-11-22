@@ -3,19 +3,17 @@
 对于网页的 `scrollTop`，如下代码在 chrome 正常，但是 ie 和 ff 会异常
 
 ```js 
-    document.body.scrollTop
-    $('body').scrollTop()
-
+document.body.scrollTop
+$('body').scrollTop()
 ```
 
 所以如果使用的话，使用：
 
 ```js
-    document.body.scrollTop || document.documentElement.scrollTop
-    $(window).scrollTop()
-    $(document).scrollTop()
-    $('html, body').scrollTop()
-
+document.body.scrollTop || document.documentElement.scrollTop
+$(window).scrollTop()
+$(document).scrollTop()
+$('html, body').scrollTop()
 ```
 
 `body.scrollTop` 和 `documentElement.scrollTop` 兼容性如下
